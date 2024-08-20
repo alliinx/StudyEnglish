@@ -63,17 +63,15 @@
         </LinearLayout>
     </androidx.appcompat.widget.Toolbar>
 
-    <com.github.siyamed.shapeimageview.RoundedImageView
+    <ImageView
         android:id="@+id/img_detail"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
         android:layout_gravity="center"
         android:layout_margin="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:siRadius="25dp"
-        app:siSquare="true"
         tools:src="@drawable/test_img" />
 
     <TextView

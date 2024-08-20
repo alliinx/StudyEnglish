@@ -46,7 +46,7 @@
         </LinearLayout>
     </androidx.appcompat.widget.Toolbar>
 
-    <com.github.siyamed.shapeimageview.RoundedImageView
+    <ImageView
         android:id="@+id/img_write_test_word"
         android:layout_width="match_parent"
         android:layout_height="350dp"
@@ -57,8 +57,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:siRadius="45dp"
-        app:siSquare="true"
         tools:src="@drawable/test_img" />
 
     <com.google.android.material.textfield.TextInputLayout

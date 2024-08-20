@@ -17,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:text="3/28" />
 
-    <com.github.siyamed.shapeimageview.RoundedImageView
+    <ImageView
         android:id="@+id/img_study_word"
         android:layout_width="match_parent"
         android:layout_height="350dp"
@@ -29,8 +29,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:siRadius="45dp"
-        app:siSquare="true"
         tools:src="@drawable/test_img" />
 
     <androidx.cardview.widget.CardView

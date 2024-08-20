@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="20dp"
     android:orientation="vertical">
 
-    <com.github.siyamed.shapeimageview.RoundedImageView
+    <ImageView
         android:id="@+id/img_dictionary_rv"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_gravity="center"
-        app:siRadius="25dp"
-        app:siSquare="true"
         tools:src="@drawable/test_img" />
 
     <TextView
