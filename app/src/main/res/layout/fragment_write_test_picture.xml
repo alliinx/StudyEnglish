@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.test.choosetest.chooseenglish.ChooseTestPictureFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:contentInsetStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@drawable/bg_btn_add_word"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:id="@+id/kolQuestion"
+                style="@style/ToolBarText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                tools:text="2/20" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:id="@+id/img_write_test_word"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:siRadius="45dp"
+        app:siSquare="true"
+        tools:src="@drawable/test_img" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/edit_text_write_test"
+        app:boxStrokeColor="@color/persian_blue"
+        app:boxStrokeErrorColor="@color/fire_engine_red"
+        app:errorEnabled="true"
+        app:errorTextColor="@color/fire_engine_red"
+        app:hintTextColor="@color/persian_blue"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_write_test_word">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_word"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:inputType="text"
+            android:textColor="@color/night_rider" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        style="@style/ButtonText"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/bg_button_selector"
+        android:text="@string/btn_next_text"
+        app:backgroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

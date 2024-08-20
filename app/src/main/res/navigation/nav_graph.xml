@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dictionary">
+
+    <fragment
+        android:id="@+id/dictionary"
+        android:name="com.allinx.english.presentation.dictionary.DictionaryFragment"
+        android:label="fragment_dictionary"
+        tools:layout="@layout/fragment_dictionary" >
+        <action
+            android:id="@+id/action_dictionaryFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+        <action
+            android:id="@+id/action_dictionaryFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.allinx.english.presentation.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detailFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.allinx.english.presentation.edit.EditFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" />
+    <fragment
+        android:id="@+id/test"
+        android:name="com.allinx.english.presentation.test.TestFragment"
+        android:label="fragment_test"
+        tools:layout="@layout/fragment_test" >
+        <action
+            android:id="@+id/action_test_to_chooseTestPictureFragment"
+            app:destination="@id/chooseTestPictureFragment" />
+        <action
+            android:id="@+id/action_test_to_writeTestPictureFragment"
+            app:destination="@id/writeTestPictureFragment" />
+        <action
+            android:id="@+id/action_test_to_chooseTestTextEnglishFragment"
+            app:destination="@id/chooseTestTextEnglishFragment" />
+        <action
+            android:id="@+id/action_test_to_chooseTestTextRussianFragment"
+            app:destination="@id/chooseTestTextRussianFragment" />
+        <action
+            android:id="@+id/action_test_to_writeTestTextEnglishFragment"
+            app:destination="@id/writeTestTextEnglishFragment" />
+        <action
+            android:id="@+id/action_test_to_writeTestTextRussianFragment"
+            app:destination="@id/writeTestTextRussianFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/study"
+        android:name="com.allinx.english.presentation.study.StudyFragment"
+        android:label="fragment_study"
+        tools:layout="@layout/fragment_study" />
+    <fragment
+        android:id="@+id/chooseTestPictureFragment"
+        android:name="com.allinx.english.presentation.test.choosetest.chooseenglish.ChooseTestPictureFragment"
+        android:label="fragment_choose_test"
+        tools:layout="@layout/fragment_choose_test_picture" >
+        <action
+            android:id="@+id/action_chooseTestPictureFragment_to_finishTestFragment"
+            app:destination="@id/finishTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finishTestFragment"
+        android:name="com.allinx.english.presentation.test.finish.FinishTestFragment"
+        android:label="fragment_finish_test"
+        tools:layout="@layout/fragment_finish_test" >
+        <action
+            android:id="@+id/action_finishTestFragment_to_test"
+            app:destination="@id/test" />
+    </fragment>
+    <fragment
+        android:id="@+id/writeTestPictureFragment"
+        android:name="com.allinx.english.presentation.test.writetest.WriteTestPictureFragment"
+        android:label="WriteTestFragment" >
+        <action
+            android:id="@+id/action_writeTestPictureFragment_to_finishTestFragment"
+            app:destination="@id/finishTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseTestTextEnglishFragment"
+        android:name="com.allinx.english.presentation.test.choosetest.chooseenglish.ChooseTestTextEnglishFragment"
+        android:label="ChooseTestTextEnglishFragment" >
+        <action
+            android:id="@+id/action_chooseTestTextEnglishFragment_to_finishTestFragment"
+            app:destination="@id/finishTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseTestTextRussianFragment"
+        android:name="com.allinx.english.presentation.test.choosetest.chooserussian.ChooseTestTextRussianFragment"
+        android:label="ChooseTestTextRussianFragment" >
+        <action
+            android:id="@+id/action_chooseTestTextRussianFragment_to_finishTestFragment"
+            app:destination="@id/finishTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/writeTestTextEnglishFragment"
+        android:name="com.allinx.english.presentation.test.writetest.WriteTestTextEnglishFragment"
+        android:label="WriteTestTextEnglishFragment" >
+        <action
+            android:id="@+id/action_writeTestTextEnglishFragment_to_finishTestFragment"
+            app:destination="@id/finishTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/writeTestTextRussianFragment"
+        android:name="com.allinx.english.presentation.test.writetest.WriteTestTextRussianFragment"
+        android:label="WriteTestTextRussianFragment" >
+        <action
+            android:id="@+id/action_writeTestTextRussianFragment_to_finishTestFragment"
+            app:destination="@id/finishTestFragment" />
+    </fragment>
+</navigation>

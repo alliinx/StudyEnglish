@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="night_rider">#2E2E2E</color>
+    <color name="ghost">#D2D1D7</color>
+    <color name="solitude">#F1F2F6</color>
+    <color name="silver">#C5C5C5</color>
+    <color name="dark_grey">#AAAAAA</color>
+    <color name="silver_alpha80">#CCC5C5C5</color>
+    <color name="fire_engine_red">#D71818</color>
+    <color name="persian_blue">#2148BD</color>
+    <color name="persian_blue_alpha80">#CC2148BD</color>
+    <color name="midnight_blue">#162D72</color>
+    <color name="pastel_green">#74E14D</color>
+</resources>

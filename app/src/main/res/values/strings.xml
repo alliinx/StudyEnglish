@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">EnglishStudy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Bottom Nav Bar -->
+    <string name="study_title_menu">Изучать слова</string>
+    <string name="test_title_menu">Тест</string>
+    <string name="dictionary_title_menu">Словарь</string>
+    <!-- Dictionary -->
+    <string name="dictionary_title_toolbar">Словарь</string>
+    <!-- Edit -->
+    <string name="edit_title_toolbar">Изменить</string>
+    <string name="create_title_toolbar">Создать</string>
+    <string name="hint_input_word">Введите слово</string>
+    <string name="hint_input_meaning">Введите перевод</string>
+    <string name="error_input_word">Необходимо ввести слово</string>
+    <string name="error_input_meaning">Необходимо ввести перевод слова</string>
+    <string name="error_image">Необходимо загрузить изображение</string>
+    <string name="btn_save">Сохранить</string>
+    <!-- Errors -->
+    <string name="error_database">Ошибка при загрузке данных</string>
+    <string name="error_update">Ошибка при обновлении данных</string>
+    <string name="error_insert">Ошибка при добавлении данных</string>
+    <!-- Study Fragment -->
+    <string name="btn_flip_text">Перевернуть</string>
+    <string name="btn_next_text">Далее</string>
+    <string name="btn_back_text">Назад</string>
+    <!-- Test Fragment -->
+    <string name="choose_test_title">Тесты с выбором ответа</string>
+    <string name="choose_first_test_title">Выбрать слово по картинке</string>
+    <string name="choose_second_test_title">Выбрать слово на английском по его переводу</string>
+    <string name="choose_third_test_title">Выбрать слово на русском по его переводу</string>
+    <string name="write_test_title">Тесты с написанием ответа</string>
+    <string name="write_first_test_title">Написать слово по картинке</string>
+    <string name="write_second_test_title">Написать слово на английском по его переводу</string>
+    <string name="write_third_test_title">Написать слово на русском по его переводу</string>
+    <!-- Finish Fragment -->
+    <string name="analyticalPieChartAmount">Всего</string>
+    <string name="btn_back_to_test">Вернуться к тестам</string>
+    <string name="score_title">Результаты теста</string>
+    <string-array name="analyticalPieChartColorArray">
+        <item>#74E14D</item>
+        <item>#D9455F</item>
+        <item>#7167ED</item>
+        <item>#6CC3F3</item>
+        <item>#6054EA</item>
+    </string-array>
+    <!-- Write Test Fragment -->
+    <string name="edit_text_write_test">Введите ответ</string>
+    <string name="btn_finish_text">Завершить</string>
+</resources>
